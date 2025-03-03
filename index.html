@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="can.jpg" alt="Profile Picture" class="circle-image" width="160" height="100"> 
+        </div>
+        <h1 id="typed-header"></h1>
+        <p>Web Developer | Ashley Lalican</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate web developer with experience in building responsive and user-friendly websites. Eager to learn new technologies and improve skills.</p>
+        <img src="lali.jpg" alt="Profile Picture" class="profile-pic">
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-circle" data-skill="90%">
+            <div class="circle">
+                <div class="fill"></div>
+                <div class="inside-circle">HTML <span class="skill-percentage">0%</span></div>
+            </div>
+        </div>
+        <div class="skill-circle" data-skill="85%">
+            <div class="circle">
+                <div class="fill"></div>
+                <div class="inside-circle">CSS <span class="skill-percentage">0%</span></div>
+            </div>
+        </div>
+        <div class="skill-circle" data-skill="80%">
+            <div class="circle">
+                <div class="fill"></div>
+                <div class="inside-circle">JavaScript <span class="skill-percentage">0%</span></div>
+            </div>
+        </div>
+        <div class="skill-circle" data-skill="75%">
+            <div class="circle">
+                <div class="fill"></div>
+                <div class="inside-circle">React <span class="skill-percentage">0%</span></div>
+            </div>
+        </div>
+        <div class="skill-circle" data-skill="70%">
+            <div class="circle">
+                <div class="fill"></div>
+                <div class="inside-circle">Node.js <span class="skill-percentage">0%</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Web Developer</h3>
+            <p>Company Name - Location | Jan 2022 - Present</p>
+            <button class="toggle-description">Show Responsibilities</button>
+            <p class="description" style="display: none;">
+                - Developed and maintained company website.<br>
+                - Collaborated with designers to create user-friendly interfaces.<br>
+                - Implemented responsive design for mobile and desktop.
+            </p>
+        </div>
+        <div class="job">
+            <h3>Intern</h3>
+            <p>Company Name - Location | Jun 2021 - Dec 2021</p>
+            <button class="toggle-description">Show Responsibilities</button>
+            <p class="description" style="display: none;">
+                - Assisted in the development of web applications.<br>
+                - Participated in code reviews and team meetings.<br>
+                - Gained experience in front-end and back-end technologies.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science in Computer Science</p>
+        <p>University Name - Location | Graduated: May 2021</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <button id="contactBtn">Contact Me</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ashley Lalican</p>
+    </footer>
+
+    <div class="scroll-progress"></div>
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <!-- Modal for Contact Form -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
